@@ -1,0 +1,1 @@
+<?php if(isset($deletedPostId)) echo $deletedPostId ?>

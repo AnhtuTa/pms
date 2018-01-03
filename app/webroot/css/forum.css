@@ -1,0 +1,302 @@
+.page_wrapper {
+	width: 70%;
+	min-width: 300px;
+	margin: 0 auto;
+}
+
+/*======== phần đăng bài =========*/
+.write_post_wrapper {
+	background: #e0e0e0;
+	padding: 15px;
+}
+.info_after_post {
+	background: #f6ff00;
+}
+
+.write_post_inner_wrapper {
+	position: relative;
+	padding-right: 80px;
+}
+.write_post_box {
+	width: 100%;
+	height: 23px; 
+	font-size: 15px;
+	padding: 5px;
+	margin: 0;
+	border-radius: 5px;
+}
+.write_post_box:focus {
+	height: 70px;
+}
+.write_post_btn {
+	position: absolute;
+	top: 1px;
+	right: 0;
+}
+
+/*======== phần các bài đăng =========*/
+.post_wrapper {
+	background: #e0e0e0;
+	padding: 5px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+.post_body {
+	background: #fafafa;
+	padding: 3px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+.comment_body {
+	background: #f1f1f1;
+	padding: 3px;
+	border-radius: 5px;
+}
+.post_poster, .comment_commentor {
+	color: #1a5fce;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	position: relative;
+}
+.post_content {
+	margin-bottom: 10px;
+}
+.post_tags {
+	margin-top: 13px;
+    height: 22px;
+    padding: 10px 0 5px 0;
+}
+.span_hashtag {
+	/*background: #6ad6ff;
+    padding: 5px;*/
+    border-radius: 3px;
+    color: #46c7f9;
+}
+.span_hashtag:hover {
+	color: #a1e5ff;
+}
+.a_hashtag:hover {
+	text-decoration: none;
+}
+/*======== phần comment mỗi bài đăng =========*/
+.write_cmt_wrapper {
+	position: relative;
+	padding-right: 116px;
+}
+.someone_typing {
+    line-height: 5px;
+    position: relative;
+    overflow: hidden;
+    height: 35px;
+}
+.img_so_typing {
+	position: absolute;
+    top: -15px;
+}
+.txt_so_typing {
+	position: absolute;
+    vertical-align: top;
+    top: 11px;
+    left: 45px;
+    margin-left: 5px;
+    font-size: 14px;
+    font-style: italic;
+    color: #808080;
+}
+.comment_box {
+	width: 100%;
+	height: 23px; 
+	font-size: 15px;
+	padding: 5px;
+	border-radius: 5px;
+}
+.comment_box:focus {
+	height: 43px;
+}
+
+.comment_btn {
+	position: absolute;
+	top: 0;
+	right: -1px;
+	height: 35px;
+	margin-left: 5px;
+	font-weight: normal;
+}
+.comment_btn:disabled {
+	color: #c4c4c4;
+}
+
+.clear_both {
+	clear: both;
+	padding: 0;
+	margin: 0;
+}
+
+.comment_show_hide_comments {
+	margin: 5px 0 8px 0;
+}
+.comment_show_hide_comments a {
+	color: #1a5fce;
+	font-weight: normal;
+}
+.cmt_span_show_hide {
+	cursor: pointer;
+	color: #20e547;
+}
+.cmt_span_show_hide:hover {
+	text-decoration: underline;
+}
+
+.comment_all_comments{
+	padding: 0px 5px 0 5px;
+	margin-top: 10px;
+}
+.comment_each_comment {
+	background: #e1e1e1;
+	padding: 5px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	position: relative;
+}
+
+.comment_time, .post_time {
+	font-size: 80%;
+	margin-bottom: 10px;
+	color: #a5a5a5;
+}
+.post_time a {
+	color: #a5a5a5;
+}
+.comment_num_of_cmt {
+	margin-bottom: 5px;
+	color: #a5a5a5;
+}
+
+/*======== phần edit delete comment =========*/
+.cmt_dropdown, .post_dropdown {
+    display: inline-block;	/*Tránh các text trong item bị ngắt dòng */
+    position: absolute;
+    top: -8px;
+    right: 0;
+}
+
+.cmt_drop_btn, .post_drop_btn {
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.cmt_tooltip, .post_tooltip {
+	display: none;
+    position: absolute;
+    z-index: 1;
+    top: -7px;
+    right: 0px;
+    background: #fff;
+    border-radius: 2px;
+    padding: 2px;
+}
+.post_tooltip {top: -13px;}
+
+.cmt_dropdown_content, .post_dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.cmt_dropdown_content span, .post_dropdown_content span {
+    color: black;
+    font-weight: normal;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.cmt_dropdown_content span:hover, .post_dropdown_content span:hover {background-color: #f1f1f1}
+
+.cmt_dropdown:hover .cmt_dropdown_content {
+    display: block;
+}
+.post_dropdown:hover .post_dropdown_content {
+    display: block;
+}
+
+.cmt_dropdown:hover .cmt_dropbtn {
+    color: #000;
+}
+/*======== end phần edit delete comment =========*/
+
+/*========= animation ==============*/
+.anim_new_comment {
+	animation-name: add_new_comment;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;		/*slow start*/
+}
+/* Nếu là Safari thì cần thêm -webkit- vào trước từ keyframes */
+@keyframes add_new_comment {
+	0%   {background-color: yellow;}
+	100% {background-color: #e1e1e1;}
+}
+
+/*=======================================*/
+.page_list b {
+	background: #5495ff;
+	color: #fff;
+	padding: 2px;
+	border-radius: 3px;
+}
+.div_no_JS_wrapper {
+	text-align: center;
+    border: 1px solid;
+    width: 400px;
+    margin: auto;
+}
+.div_no_JS {
+	background: #4986ff;
+	padding: 20px;
+	color: #fff;
+	text-align: left;
+}
+.div_no_JS .a_no_JS {
+	font-weight: bold;
+	color: #fff;
+}
+.a_btn {
+	background: #fff;
+	padding: 5px;
+	color: #4986ff;
+}
+.a_btn:hover {
+	text-decoration: none;
+}
+/*================ search =======================*/
+.form_search {
+	float: right;
+    position: relative;
+    padding-right: 44px;
+    margin-bottom: 10px;
+}
+.txt_search {
+	padding: 2px;
+    font-size: 16px;
+    height: 25px;
+    width: 200px;
+}
+.btn_search {
+	padding: 0 5px 0 5px;
+    background: #5495ff;
+    border: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.search_post_body {
+	background: #eeeeee;
+	padding: 3px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}

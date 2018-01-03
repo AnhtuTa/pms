@@ -1,0 +1,328 @@
+* {
+	margin:0;
+	padding:0;
+}
+h2, h3 {
+	color: #1a5fce;
+	font-weight: bold;
+}
+h4 {
+	color: #911ac9;
+	font-weight: bold;
+	font-size: 17px;
+}
+.info_string {
+	color: #1a5fce;
+}
+.error_string {
+	color: red;
+	font-weight: bold;
+}
+.table_header {
+	color: #1a5fce;
+	font-weight: bold;
+	font-size: 19px;
+}
+.normalButton {		/* nên dùng thằng normal_btn ở dưới */
+	background: #1a5fce;
+	color: #fff;
+	padding: 10px 20px 10px 20px;
+	margin: 5px;
+}
+.marginLeft {
+	margin-left: 5px;
+}
+
+a, .a_tag {
+	text-decoration: none;
+	color: #20e547;
+	cursor: pointer;
+}
+a:hover, .a_tag {
+	text-decoration: underline;
+	color: #20e547;
+}
+
+.table_header {
+	color: #5495ff;
+	font-weight: bold;
+	font-size: 19px;
+}
+
+.normal_btn {
+	border: 0px solid #bbb;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	text-decoration: none;
+	text-shadow: #fff 0px 1px 0px;
+	min-width: 0;
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0px 1px 1px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0px 1px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0px 1px 1px rgba(0, 0, 0, 0.2);
+	-webkit-user-select: none;
+	user-select: none;
+	font-family: Tahoma, Arial;
+}
+.normal_btn a {
+	color: #fff;
+	font-weight: normal;
+	text-decoration: none;
+}
+.normal_btn a:hover {
+	text-decoration: none;
+}
+.btn_save {
+	background: #5495ff;
+	color: #fff;
+	padding: 7px 15px 7px 15px;
+	font-size: 16px;
+}
+.btn_save:disabled {
+	color: #c4c4c4;
+	background: #f0f0f0;
+}
+.btn_delete {
+	background: red;
+	color: #fff;
+	padding: 7px 15px 7px 15px;
+	font-size: 16px;
+}
+.btn_cancel {
+	background: #f4427a;
+	color: #fff;
+	padding: 7px 15px 7px 15px;
+	font-size: 16px;
+}
+.btn_save:hover, .btn_delete:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/*======== Menubar style============*/
+.menu_wrapper {
+	/*height: 40px;	/*cùng chiều cao so với các menu item
+	background: #4986ff;
+	border: 2px solid #4986ff;
+	display:inline-block;*/
+}
+.menu_welcome {
+	text-align: right;
+}
+.logo {
+	float: left;
+	margin-right: 20px;
+}
+.pNextLogo {
+	float: left;
+	color: white;
+	/*line-height: 79px;*/	/*Do cái logo có kích thước = 79px nên thằng này cũng nên như vậy để 2 bọn nó ở giữa nhau */
+	margin-top: 16px;
+	font-size: calc(25px + 1.5vw);
+	font-family: Cambria;
+	font-weight: bold;
+	margin-left: 10px;
+	/*text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px blue;*/
+}
+.head {
+	background: #4986ff;
+	width: 100%;
+	/*min-width: 1200px;*/
+	/*height: 79px;*/
+	opacity: 0.8;
+}
+
+.head ul {
+	list-style: none;
+	text-align: center;
+	background: #4986ff;
+}
+.head ul li {
+	display: inline-table;
+	width: 120px;	//(1)
+	height: 40px;
+	line-height: 40px;	/* Các chữ trong tag li: Căn lề ra giữa so với li */
+	position: relative;
+}
+.head ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	display: block;
+	transition: all 0.5s;
+}
+.head ul li a:hover {
+	background: #fff;
+	color: #4986ff;
+}
+.head ul li > .sub-menu {	/*Chọn .sub-menu đầu tiên của thẻ li này, có thể ko cần dấu > */
+	display: none;
+	position: absolute;
+}
+.head ul li .caret_up {		/*Chọn .caret_up đầu tiên của thẻ li này */
+	display: none;
+}
+
+.head ul li:hover .sub-menu {	/*Chọn sub-menu đầu tiên khi thẻ li đc rê chuột vào */
+	display: block;
+}
+.head ul li:hover .caret_down {
+	display: none;
+}
+.head ul li:hover .caret_up {
+	display: inline;
+}
+.head ul li .sub-menu a {
+	width: 120px;	//phải >= width ở (1)
+	font-weight: bold;
+}
+.head ul li .sub-menu .sub-item-teacher a {
+	width: 230px;
+}
+.head ul li .sub-menu .sub-item-lookup a {
+	width: 160px;
+}
+/*======= End menu style =============*/
+
+.info_string {
+	color: #2ebdd3;
+	font-size: 15px;
+}
+
+/*======= Loading icon 32px =================*/
+@keyframes lds-rolling-32 {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@-webkit-keyframes lds-rolling-32 {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.lds-rolling-32 {
+  position: relative;
+}
+.lds-rolling-32 div,
+.lds-rolling-32 div:after {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border: 20px solid #555;
+  border-top-color: transparent;
+  border-radius: 50%;
+}
+.lds-rolling-32 div {
+  -webkit-animation: lds-rolling-32 1s linear infinite;
+  animation: lds-rolling-32 1s linear infinite;
+  top: 100px;
+  left: 100px;
+}
+.lds-rolling-32 div:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.lds-rolling-32 {
+  width: 32px !important;
+  height: 32px !important;
+  -webkit-transform: translate(-16px, -16px) scale(0.16) translate(16px, 16px);
+  transform: translate(-16px, -16px) scale(0.16) translate(16px, 16px);
+}
+
+/*======= end Loading icon =============*/
+
+/*======= Loading icon 20px =================*/
+@keyframes lds-rolling-20 {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@-webkit-keyframes lds-rolling-20 {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.lds-rolling-20 {
+  position: relative;
+}
+.lds-rolling-20 div,
+.lds-rolling-20 div:after {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border: 20px solid #000000;
+  border-top-color: transparent;
+  border-radius: 50%;
+}
+.lds-rolling-20 div {
+  -webkit-animation: lds-rolling-20 1s linear infinite;
+  animation: lds-rolling-20 1s linear infinite;
+  top: 100px;
+  left: 100px;
+}
+.lds-rolling-20 div:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.lds-rolling-20 {
+  width: 20px !important;
+  height: 20px !important;
+  -webkit-transform: translate(-10px, -10px) scale(0.1) translate(10px, 10px);
+  transform: translate(-10px, -10px) scale(0.1) translate(10px, 10px);
+}
+/*======= end Loading icon 20px =================*/
+.loading_icon {
+	margin: 5px 0 5px 48%;
+}
+
+/*=============== Form ==================*/
+.form_wrapper {
+	/*margin: 0 20% 0 20%;*/
+	width: 60%;
+	margin: 0 auto;
+}
+.form_label {
+	width: 25%;
+	text-align: right;
+	color: #1a5fce;
+	font-weight: bold;
+}
+.form_wrapper form table tr:nth-child(even) {
+	background: #fff;
+}
+.form_table tr td {
+	border-bottom: 0;
+}
+/*=============== end Form ==================*/
+
+.warning_post_removed {
+	position: relative;
+	border: 1px solid red;
+	padding: 0;
+	height: 50px;
+	max-width: 500px;
+}
+.error_post_removed {
+	position: absolute;
+    top: 17px;
+    padding-left: 5px;
+    color: #000;
+}

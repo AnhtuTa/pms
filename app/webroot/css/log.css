@@ -1,0 +1,26 @@
+.span_show_more {
+	color: #20e547;
+}
+.span_show_more:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.log_td_time {
+	width: 100px;
+}
+.no_more_log {
+	color: red;
+}
+
+.log_user_name {
+	color: #911ac9;
+}
+.log_field {
+	color: #5495ff;
+}
+.log_new_value {
+	color: #42f1f4;
+}
+.log_task_name {
+	color: #5495ff;
+}
