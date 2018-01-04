@@ -12,7 +12,7 @@
 <h3>These are all students in our lab and their tasks</h3>
 <?php
 	if($allTasks == null) {
-		echo "Data empty!";
+		echo "<h4>Data empty!</h4>";
 	} else {
 		$i = 0;
 		while ($i < count($allTasks)) {
@@ -25,15 +25,16 @@
 			
 			// print table of each person (student)
 			echo "<div id='task_table_".$userId."'>";
-			echo "<table class='task_table'>\n";
-			echo getTh();
+			echo "<table class='task_table' id='table_st_task_".$userId."'>\n";
+			echo getTh("table_st_task_".$userId, false, $userId);
 
 			while (isset($allTasks[$i]) && $userId == $allTasks[$i]['u']['id']) {
 				$taskName = $allTasks[$i]['t']['taskName'];
 				$startDate = strtotime($allTasks[$i]['t']['start']);
 				$deadline = strtotime($allTasks[$i]['t']['deadline']);
 				$process = $allTasks[$i]['t']['process'];
-				$lastUpdate = myFriendlyDate($allTasks[$i]['t']['last_update']);
+				//$lastUpdate = myFriendlyDate($allTasks[$i]['t']['last_update']);
+				$lastUpdate = $allTasks[$i]['t']['last_update'];
 
 				$timeInfo = getTimeInfo($startDate, $deadline, $process);
 
@@ -53,6 +54,14 @@
 				</div>
 			<?php
 			echo "</div>";
+
+			echo '<script type="text/javascript">';
+			for ($x = 0; $x < 6; $x++) {
+				if($x == 3) continue;	// Do ta ko sort trên cột 3 (timeleft)
+				echo 'document.getElementById("asc_'.$x.$userId.'").style.display = "none"; ';
+				if($x != 1) echo 'document.getElementById("desc_'.$x.$userId.'").style.display = "none"; ';
+			}
+			echo '</script>';
 		}
 	}
 ?>

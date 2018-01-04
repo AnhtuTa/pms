@@ -5,6 +5,7 @@
 <?php require('./menu.php') ?>
 <?php require('./TaskUtils.php') ?>
 <?php require('./DateUtils.php') ?>
+<?php echo $this->Html->script('task.js');?>
 
 <?php $MY_WEBSITE = "http://$_SERVER[HTTP_HOST]"."/project3" ?>
 
@@ -20,29 +21,9 @@
 	}
 ?>
 <h2>Here are your all tasks</h2>
-<table>
-	<!-- <tr>
-		<td class="table_header">Task name</td>
-		<td class="table_header">Start date</td>
-		<td class="table_header">Deadline</td>
-		<td class="table_header">Process</td>
-		<td></td>
-	</tr> -->
+<table class='task_table' id='table_my_tasks'>
 	<?php
-		// foreach ($allTasks as $item) {
-		// 	$taskId = $item['t']['id'];
-		// 	echo "<tr>\n";
-		// 	echo "\t<td>".$item['t']['taskName']."</td>\n";
-		// 	echo "\t<td>".$item['u']['personInCharge']."</td>\n";
-		// 	echo "\t<td>".date("d/m/Y", strtotime($item['t']['start']))."</td>\n";
-		// 	echo "\t<td>".date("d/m/Y", strtotime($item['t']['deadline']))."</td>\n";
-		// 	echo "\t<td>".$item['t']['process']."</td>\n";
-		// 	echo "\t<td><span class='btn_edit_task'><a href='edit_task?taskId=".$taskId."'>Edit</a></span></td>\n";
-		// 	echo "</tr>\n";
-		// }
-
-		echo "<table class='task_table'>\n";
-		echo getTh();	// Có thể thêm tham số cho hàm này, chẳng hạn: getTh("them 1 td o day!");
+		echo getTh("table_my_tasks", false);
 
 		for ($i=0; $i < count($allTasks); $i++) {
 			$taskId = $allTasks[$i]['t']['id'];
@@ -50,13 +31,12 @@
 			$startDate = strtotime($allTasks[$i]['t']['start']);
 			$deadline = strtotime($allTasks[$i]['t']['deadline']);
 			$process = $allTasks[$i]['t']['process'];
-			$lastUpdate = myFriendlyDate($allTasks[$i]['t']['last_update']);
+			$lastUpdate = $allTasks[$i]['t']['last_update'];
 
 			$timeInfo = getTimeInfo($startDate, $deadline, $process);
 
 			echo getTr($taskName, $startDate, $deadline, $timeInfo['total_time'],
 				$timeInfo['time_left'], $timeInfo['time_left_percent'], $process, $lastUpdate, $taskId);
 		}
-		echo "</table>\n";
 	?>
 </table>

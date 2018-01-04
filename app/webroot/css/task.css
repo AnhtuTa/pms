@@ -70,3 +70,15 @@
 .no_finished_task {
 	padding: 5px;
 }
+.sortable {
+	cursor: pointer;
+}
+.sortable:hover {
+	background: #e0e0e0;
+}
+#asc_0, #asc_1, #asc_2, #asc_4, #asc_5 {
+	display: none;
+}
+#desc_0, #desc_2, #desc_4, #desc_5 {
+	display: none;
+}

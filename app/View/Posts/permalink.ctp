@@ -7,7 +7,7 @@
 <?php require('./ShowPost.php') ?>
 <?php echo $this->Html->script('jquery-3.2.1.min.js'); ?>
 
-<script src="http://<?php echo $_SERVER['SERVER_NAME'] ?>:8000/socket.io/socket.io.js"></script>
+<script src="https://project3nodejs.herokuapp.com/socket.io/socket.io.js"></script>
 
 <?php echo $this->Html->script('forum.js');?>
 <?php echo $this->Html->script('sweetalert.min.js');?>
