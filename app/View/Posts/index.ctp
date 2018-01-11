@@ -31,14 +31,9 @@
 <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
 
 <div class="page_wrapper">
+	<!-- <h2>Chú ý: Hiện tại forum vẫn lỗi: ko xóa đc comment, và vài lỗi khác... F*ck 000webhost!!!</h2>
+	<h2>Thử trên localhost chạy ngon mà cho lên host thật lại lỗi!!!</h2> -->
 	<?php if($currentPage == 1) { ?>
-	<div class="search_wrapper">
-		<form class="form_search" action="<?php echo $MY_WEBSITE."/posts/search" ?>">
-			<input type="text" placeholder="search posts..." name="txt_search" class="txt_search" required>
-			<button type="submit" name="btn_search" class="btn_search"><img width='30' src="<?php echo $MY_WEBSITE."/img/search_icon.png" ?>"></button>
-		</form>
-		<div style="clear: both"></div>
-	</div>
 
 	<div class="write_post_wrapper">
 		<h3>Post something in forum</h3>
@@ -49,10 +44,10 @@
 			</div>
 		</form>
 	</div>
-	<?php }?>
-	
 	<div id="info_after_post_id" class="info_after_post"><?php if(isset($infoString)) echo $infoString; ?></div>
 	<div style="margin-bottom: 40px;"></div>
+	<?php }?>
+	
 	<?php 
 		foreach ($tenNewestPosts as $item) {
 			$post_id = $item['p']['id'];
@@ -65,6 +60,8 @@
 		}
 	?>
 </div>
+<?php showSidebar($notifications); ?>
+<div style="clear: both"></div>
 
 <div class="page_list">
 	<?php
@@ -149,5 +146,41 @@
 	// $kq = nl2br($kq);
 	// echo "demo = $demo"."<br>";
 	// echo "kq = $kq";
+
+	// $datetime = new DateTime("2018-01-11 14:00:00", new DateTimeZone('Europe/London'));
+	// echo $datetime->format('Y-m-d H:i:sP')."<br>";
+	// $datetime->setTimezone(new DateTimeZone('Asia/Ho_Chi_Minh'));
+	// echo $datetime->format('Y-m-d H:i:sP')."<br>";
+	// echo $datetime->format('F d, Y, \a\t H\hi')."<br>";
+	// $kq = $datetime->format('F d, Y, \a\t H\hi')."<br>";
+	// echo "kq = ".$kq."<br>";
+	// echo $_SERVER['SERVER_NAME']."<br>";
+	// echo $_SERVER['HTTP_HOST']."<br>";
+
+	// echo date_default_timezone_get()."<br>";
+	// echo time()."<br>";
+	// echo "After set timezone in VN<br>";
+	// date_default_timezone_set('Asia/Ho_Chi_Minh');
+	// echo date_default_timezone_get()."<br>";
+	// echo time()."<br>";
+
+	// $datetime_now = new DateTime("2018-01-11 18:20:00");
+	// echo $datetime_now->format('Y-m-d H:i:s')."<br>";
+	// $datetime_now->setTimezone(new DateTimeZone('Europe/London'));
+	// echo $datetime_now->format('Y-m-d H:i:s')."<br>";
+
+	// // CHÚ Ý: hàm time() là số giây chênh lệnh giữa hiện tại và ngày 1/1/1970, do đó
+	// // ở múi giờ nào thì nó vẫn như nhau, vì thời gian lúc 1/1/1970 cũng ở cùng múi
+	// // giờ so với hàm time()
+
+	// date_default_timezone_set('Asia/Ho_Chi_Minh');
+	// echo date('Y-m-d H:i:s')."<br>";
+
+	// $date = new DateTime('2018-01-11 14:00:00', new DateTimeZone('Europe/London'));
+	// echo $date->format('Y-m-d H:i:sP')."<br>";
+
+	// $date->setTimezone(new DateTimeZone('Asia/Ho_Chi_Minh'));
+	// echo $date->format('Y-m-d H:i:sP')."<br>";
+	// echo date('F d, Y, \a\t H\hi', $date->getTimestamp());
 ?>
 

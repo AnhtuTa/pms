@@ -53,6 +53,7 @@
 					limit $sid,$amountOfPostsEachPage;";
 
 			$tenNewestPosts = $this->Post->query($sql_show_posts);
+
 			$commentOf10Post = array();
 			//print_r($tenNewestPosts);
 			$this->set("tenNewestPosts", $tenNewestPosts);
@@ -66,6 +67,16 @@
 				$commentOf10Post["$post_id"] = $this->Post->query($sql_show_comment);
 			}
 			$this->set("commentOf10Post", $commentOf10Post);
+
+			$sql_notify = "SELECT p.id, u.name AS poster, p.newest_comment_time, (select u2.name from users u2 where p.cmt_user1 = u2.id) AS user1, (select u2.name from users u2 where p.cmt_user2 = u2.id) AS user2, (select u2.name from users u2 where p.cmt_user3 = u2.id) AS user3
+							FROM posts p, users u
+							where p.user_id = u.id
+							and p.newest_comment_time is not null
+							ORDER BY p.newest_comment_time DESC
+							LIMIT 0, 10";
+			$notifications = $this->Post->query($sql_notify);
+			$this->set("notifications", $notifications);
+			//print_r($notifications);
 		}
 
 		function demo(){}
@@ -186,9 +197,7 @@
 			}
 		}
 
-		function noJS() {
-
-		}
+		function noJS() {}
 
 		function startsWith($haystack, $needle) {
 			$len = strlen($needle);
@@ -218,3 +227,18 @@
 			}
 		}
 	}
+
+	/*
+	demo kq của $notifications
+	Array ( 
+			[0] => Array ( [p] => Array ( [id] => 51 [newest_comment_time] => 2018-01-11 00:47:01 )
+						   [u] => Array ( [poster] => Admin )
+						   [0] => Array ( [user1] => SieuSaiyanTocXu [user2] => Admin [user3] => ) )
+						   
+			[1] => Array ( [p] => Array ( [id] => 48 [newest_comment_time] => 2018-01-11 00:41:55 ) [u] => Array ( [poster] => Admin ) [0] => Array ( [user1] => SieuSaiyanTocXu [user2] => Admin [user3] => ) )
+			
+			[2] => Array ( [p] => Array ( [id] => 52 [newest_comment_time] => 2017-12-14 23:15:58 )
+						   [u] => Array ( [poster] => Admin )
+						   [0] => Array ( [user1] => SieuSaiyanTocXu [user2] => Admin [user3] => Huy gà ) ) 
+	)
+	*/

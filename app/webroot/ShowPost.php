@@ -61,7 +61,7 @@
 				<?php } ?>
 			</div>
 			<div class="post_time">
-				<a href="<?php echo $MY_WEBSITE."/posts/permalink?postId=".$post_id ?>"><?php echo myFormatDate(strtotime($post_time)); ?></a>
+				<a href="<?php echo $MY_WEBSITE."/posts/permalink?postId=".$post_id ?>"><?php echo myFormatDate($post_time); ?></a>
 			</div>
 			<div class="post_content"><?php echo $post_content; ?></div>
 
@@ -126,7 +126,7 @@
 
 						<?php } ?>
 					</div>
-					<div class="comment_time"><?php echo myFormatDate(strtotime($comment_time)); ?></div>
+					<div class="comment_time"><?php echo myFormatDate($comment_time); ?></div>
 					<div class="comment_content"><?php echo $comment_content; ?></div>
 				</div>
 					<?php
@@ -179,5 +179,56 @@
 		echo '<div class="page_wrapper">';
 			echo "<h3>No posts found!</h3>";
 		echo '</div>';
+	}
+
+	function showSidebar($notifications) {
+		$MY_WEBSITE = "http://$_SERVER[HTTP_HOST]"."/project3";
+		?>
+		<div class="side_bar">
+			<div class="search_wrapper">
+				<form class="form_search" action="<?php echo $MY_WEBSITE."/posts/search" ?>">
+					<input type="text" placeholder="search posts..." name="txt_search" class="txt_search" required>
+					<button type="submit" name="btn_search" class="btn_search"><img width='30' src="<?php echo $MY_WEBSITE."/img/search_icon.png" ?>"></button>
+				</form>
+				<div style="clear: both"></div>
+			</div>
+
+			<h4 style="margin-top: 20px;">Newest responses</h4>
+			<div class="notifications">
+				<?php
+				if(isset($notifications)) {
+					for ($i=0; $i < count($notifications); $i++) {
+						$postId = $notifications[$i]['p']['id'];
+						$poster = $notifications[$i]['u']['poster'];
+						if($poster == $_SESSION['userName']) {
+							$poster = "<span class='post_poster'>your</span>";
+						} else {
+							$poster = "<span class='post_poster'>".$poster."</span>'s ";
+						}
+						$time = $notifications[$i]['p']['newest_comment_time'];
+						$user1 = ($notifications[$i]['0']['user1'] == $_SESSION['userName'] ? "You" : $notifications[$i]['0']['user1']);
+						$user2 = ($notifications[$i]['0']['user2'] == $_SESSION['userName'] ? "You" : $notifications[$i]['0']['user2']);
+						$user3 = ($notifications[$i]['0']['user3'] == $_SESSION['userName'] ? "You" : $notifications[$i]['0']['user3']);
+
+						if($user3 == '' && $user2 == '') {
+							$users = "<span class='post_poster'>".$user1."</span>";
+						} else if($user3 == '' && $user2 != '') {
+							$users = "<span class='post_poster'>".$user1."</span> and <span class='post_poster'>".$user2."</span>";
+						} else {
+							$users = "<span class='post_poster'>".$user1."</span>, <span class='post_poster'>$user2</span> and <span class='post_poster'>".$user3."</span>";
+						}
+
+						echo "<div class='notify_item'>";
+						echo '<a href="'.$MY_WEBSITE.'/posts/permalink?postId='.$postId.'">'.$users.' commented on '.$poster.' post</a>';
+							echo "<div class='post_time notify_time'>";
+								echo myFriendlyDate($time);
+							echo "</div>";
+						echo "</div>";
+					}
+				}
+				?>
+			</div>
+		</div>
+		<?php
 	}
 ?>

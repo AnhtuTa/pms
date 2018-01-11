@@ -22,7 +22,7 @@
 			$timeLeft_percent = 0;
 		} else {
 			$timeLeft = ceil($timeLeft);
-			$timeLeft_percent = round($timeLeft*100/$result['total_time']);
+			$timeLeft_percent = $result['total_time'] != 0 ? round($timeLeft*100/$result['total_time']) : 0;
 			if($process == 100) $timeLeft = "<div style='color: #1a5fce'><b>finished!</b></div>";
 		}
 		if($timeLeft_percent > 100) $timeLeft_percent = 100;	//đề phòng trường hợp startDate < time() (nghĩa là thời điểm start của task này là trong tương lai)

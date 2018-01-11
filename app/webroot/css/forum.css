@@ -1,7 +1,9 @@
 .page_wrapper {
-	width: 70%;
-	min-width: 300px;
-	margin: 0 auto;
+	width: 60%;
+    min-width: 300px;
+    /* margin: auto; */
+    float: left;
+    margin-left: 5%;
 }
 
 /*======== phần đăng bài =========*/
@@ -82,7 +84,7 @@
 /*======== phần comment mỗi bài đăng =========*/
 .write_cmt_wrapper {
 	position: relative;
-	padding-right: 116px;
+	padding-right: 121px;
 }
 .someone_typing {
     line-height: 5px;
@@ -275,16 +277,14 @@
 }
 /*================ search =======================*/
 .form_search {
-	float: right;
     position: relative;
-    padding-right: 44px;
+    padding-right: 47px;
     margin-bottom: 10px;
 }
 .txt_search {
 	padding: 2px;
     font-size: 16px;
     height: 25px;
-    width: 200px;
 }
 .btn_search {
 	padding: 0 5px 0 5px;
@@ -299,4 +299,21 @@
 	padding: 3px;
 	margin-bottom: 10px;
 	border-radius: 5px;
+}
+
+/*==================== side_bar ===================*/
+.side_bar {
+    float: right;
+    width: 28%;
+    margin-right: 5%;
+}
+.notify_item {
+	margin: 10px;
+    border-bottom: 2px solid #cecece;
+    font-size: 15px;
+}
+.notify_time {
+	margin-top: 7px;
+	font-style: italic;
+	font-size: 14px;
 }

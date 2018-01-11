@@ -60,7 +60,7 @@
 		xmlhttp.onreadystatechange = function() {
 			if(this.readyState == 4 && this.status == 200) {
 				console.log("Bạns vừa comment! ID của comment này là: " + this.responseText);
-				displayComment(postId, content, this.responseText);
+				displayComment(postId, content, parseInt(this.responseText));
 			}
 		}
 
@@ -74,7 +74,7 @@
 		var json_str = {
 			"postId": postId,
 			"commentor": "<?php echo $_SESSION['userName'] ?>",
-			"time": "<?php echo myFormatDate(strtotime(date('Y-m-d H:i:s'))) ?>",
+			"time": "<?php echo myFormatDate(getVNDatetimeNow()) ?>",
 			"content": content
 		}
 
@@ -91,7 +91,7 @@
 		socket.emit("client_comments", {
 			postId: postId,
 			commentor: "<?php echo $_SESSION['userName'] ?>",
-			"time": "<?php echo myFormatDate(strtotime(date('Y-m-d H:i:s'))) ?>",
+			"time": "<?php echo myFormatDate(getVNDatetimeNow()) ?>",
 			content: content
 		});
 	}

@@ -35,4 +35,9 @@ class AppController extends Controller {
 	public $USERNAME = "root";
 	public $PASSWORD = "5555";
 	public $DB_NAME = "project3";
+
+	// public $SERVER_NAME = "localhost";
+	// public $USERNAME = "id3217876_root";
+	// public $PASSWORD = "songohan95";
+	// public $DB_NAME = "id3217876_project3";
 }

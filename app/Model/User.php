@@ -16,7 +16,7 @@ class User extends AppModel {
     		$_SESSION['userId'] = $data[0]['users']['id'];
             $_SESSION['userName'] = $data[0]['users']['name'];
             
-            set_time_limit(60);
+            //set_time_limit(60);   //what the hell is this? We dont need this!
     		return true;
     	}
     }

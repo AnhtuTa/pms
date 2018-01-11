@@ -27,7 +27,7 @@ body {
 	background: #fbfbfb;
 	color: #fff;
 	font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
-	font-size:90%;
+/*	font-size:90%;*/
 	margin: 0;
 }
 a {
@@ -60,7 +60,8 @@ h2 {
 h3 {
 	color: #2c6877;
 	font-family:'Gill Sans','lucida grande', helvetica, arial, sans-serif;
-	font-size: 165%;
+	/*font-size: 165%;*/
+	font-size: 23px;
 }
 h4 {
 	color: #993;
