@@ -21,3 +21,4 @@
 	</table>
 </form>
 <h3><?php echo isset($infoString) ? $infoString : ''?></h3>
+<?php require('./footer.php') ?>

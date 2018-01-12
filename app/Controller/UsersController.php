@@ -106,9 +106,9 @@ class UsersController extends AppController {
 				$this->set("name", $name);
 				
 				if ((strpos($e->getMessage(), 'PRIMARY') !== false) && (strpos($e->getMessage(), 'Duplicate entry') !== false)) {
-					$this->set("errorString", "<h3 class='error'>Error: this username has been exist!</h3>");
+					$this->set("errorString", "<h3 class='error_string'>Error: this username has been exist!</h3>");
 				} else {
-					$this->set("errorString", "<h3 class='error'>An unknown error happend!</h3>");
+					$this->set("errorString", "<h3 class='error_string'>An unknown error happend!</h3>");
 				}
 			}
 			

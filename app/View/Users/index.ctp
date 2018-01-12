@@ -4,3 +4,4 @@
 <?php require('./menu.php') ?>
 
 <h2>Welcome to project management system!</h2>
+<?php require('./footer.php') ?>

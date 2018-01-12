@@ -31,8 +31,6 @@
 <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
 
 <div class="page_wrapper">
-	<!-- <h2>Chú ý: Hiện tại forum vẫn lỗi: ko xóa đc comment, và vài lỗi khác... F*ck 000webhost!!!</h2>
-	<h2>Thử trên localhost chạy ngon mà cho lên host thật lại lỗi!!!</h2> -->
 	<?php if($currentPage == 1) { ?>
 
 	<div class="write_post_wrapper">
@@ -130,6 +128,7 @@
 	?>
 </div>
 
+<?php require('./footer.php') ?>
 <?php require('./forum_js.php') ?>
 
 <?php //echo "time now = ".date("Y-m-d H:i:s")."<br>" ?>

@@ -65,3 +65,5 @@
 		}
 	}
 ?>
+
+<?php require('./footer.php') ?>

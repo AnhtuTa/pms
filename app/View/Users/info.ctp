@@ -19,3 +19,5 @@
 <div><a href="edit_info">Edit information</a></div>
 <div><a href="change_password">Change password</a></div>
 <div><a href="logout">Logout</a></div>
+
+<?php require('./footer.php') ?>

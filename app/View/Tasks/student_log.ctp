@@ -89,6 +89,7 @@
 <div style="margin: 20px 0 10px 0;"><span class='span_show_more' id="span_show_more_id" onclick="showMoreActivity()">Show more activities</span></div>
 <div id="no_more_log_id"></div>
 
+<?php require('./footer.php') ?>
 
 <script type="text/javascript">
 	var logIndex = 10;	// chỉ số của record cần lấy trong database, VD: logIndex = 123 thì ta sẽ query là: SELECT ... LIMIT 123, 10; trong đó 10 là khối lượng bản ghi lấy từ DB mỗi lần request

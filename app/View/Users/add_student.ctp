@@ -37,3 +37,4 @@
 </form>
 <h3><?php echo isset($infoString) ? $infoString : ''?></h3>
 <h3><?php echo isset($errorString) ? $errorString : ''?></h3>
+<?php require('./footer.php') ?>

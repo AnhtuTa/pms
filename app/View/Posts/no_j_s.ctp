@@ -21,6 +21,7 @@
 	</div>
 </div>
 
+<?php require('./footer.php') ?>
 <script type="text/javascript">
 	var parent = document.getElementById("div_parent");
 	var child = document.getElementById("div_child");

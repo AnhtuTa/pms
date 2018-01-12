@@ -12,3 +12,4 @@
 	// header chỉ dùng đc khi chưa đc send. Nếu send rồi thì phải dùng JS. deploy lên 000webhost.com thì bị như vậy
 	// trường hợp trên là header chưa đc send
 ?>
+<?php require('./footer.php') ?>

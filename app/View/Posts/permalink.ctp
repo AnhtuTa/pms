@@ -46,4 +46,5 @@
 	}
 
 ?>
+<?php require('./footer.php') ?>
 <?php require('./forum_js.php') ?>

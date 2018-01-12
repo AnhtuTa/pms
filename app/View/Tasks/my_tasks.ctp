@@ -40,3 +40,4 @@
 		}
 	?>
 </table>
+<?php require('./footer.php') ?>

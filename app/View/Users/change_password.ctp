@@ -46,3 +46,4 @@
 </form>
 <?php } ?>
 <h3 class="error_string"><?php echo isset($errorString2) ? $errorString2 : ''?></h3>
+<?php require('./footer.php') ?>

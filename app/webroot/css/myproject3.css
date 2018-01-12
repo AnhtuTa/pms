@@ -326,3 +326,45 @@ a:hover, .a_tag {
     padding-left: 5px;
     color: #000;
 }
+
+/*============= footer =====================*/
+footer {
+	background: #4986ff;
+	width: 100%;
+	overflow: hidden;	/* Thuộc tính overflow xác định điều gì sẽ xảy ra nếu một thành phần box tràn nội dung. */
+	opacity: 0.90;
+}
+
+footer h3, footer p {
+	color: #FFF;
+}
+footer section {
+	width: 29%;
+	float: left;
+	margin: 2% 2%;
+	text-align: center;
+}
+footer p a {
+	color: #FFF;
+	text-decoration: none;
+}
+.social li {
+	display: inline;
+}
+.social li img {
+	height: 50px;
+}
+.first_footer {
+	margin-top: 120px;
+}
+.second_footer {
+	border-top: 3px solid #699bff;
+	background-color: #4986ff;
+	max-height: 50px;
+	text-align: center;
+	opacity: 0.95;
+}
+.second_footer p {
+	margin-top: 10px;
+}
+/*============= end of footer ==============*/

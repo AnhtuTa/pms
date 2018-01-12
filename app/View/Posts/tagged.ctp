@@ -16,3 +16,4 @@
 		}
 	}
 ?>
+<?php require('./footer.php') ?>
