@@ -31,6 +31,6 @@
 		} else if($_SESSION['userRole'] == 2) {
 			require("menu_student.php");
 		}
-		echo "<div style='margin-bottom: 15px;'></div>";
+		echo "<div style='margin-bottom: 15px;' id='menu_separator'></div>";
 	}
 ?>

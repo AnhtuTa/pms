@@ -36180,3 +36180,284 @@ Request URL: /project3/css/cake.generic.css
 Stack Trace:
 #0 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2018-01-31 05:05:12 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /project3/images/slide1.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+n}
+n}
+2018-01-31 05:05:14 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /project3/images/bottom_brown.png
+Stack Trace:
+#0 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 05:05:14 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /project3/images/slide1.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 05:05:14 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /project3/images/top_brown.png
+Stack Trace:
+#0 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 05:05:14 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /project3/images/slide2.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 05:07:49 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /project3/img/bottom_brown.png
+Stack Trace:
+#0 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 05:07:49 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /project3/img/top_brown.png
+Stack Trace:
+#0 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 05:07:49 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /project3/img/slide3.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 05:07:49 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /project3/img/slide2.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 05:20:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /project3/css/cake.generic.css
+Stack Trace:
+#0 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 05:20:40 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /project3/home
+Stack Trace:
+#0 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 05:20:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /project3/css/cake.generic.css
+Stack Trace:
+#0 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 05:20:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /project3/css/cake.generic.css
+Stack Trace:
+#0 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 05:21:57 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /project3/home
+Stack Trace:
+#0 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 05:21:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /project3/css/cake.generic.css
+Stack Trace:
+#0 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 05:22:52 Error: [MissingActionException] Action HomeController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'HomeController',
+  'action' => 'index',
+)
+Request URL: /project3/home
+Stack Trace:
+#0 C:\xampp\htdocs\project3\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project3\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#2 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-01-31 05:22:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /project3/css/cake.generic.css
+Stack Trace:
+#0 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 05:23:28 Error: [MissingActionException] Action HomeController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'HomeController',
+  'action' => 'index',
+)
+Request URL: /project3/home
+Stack Trace:
+#0 C:\xampp\htdocs\project3\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project3\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#2 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-01-31 05:23:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /project3/css/cake.generic.css
+Stack Trace:
+#0 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 05:23:55 Error: [MissingActionException] Action HomeController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'HomeController',
+  'action' => 'index',
+)
+Request URL: /project3/home
+Stack Trace:
+#0 C:\xampp\htdocs\project3\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project3\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#2 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-01-31 05:23:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /project3/css/cake.generic.css
+Stack Trace:
+#0 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 05:24:18 Error: [MissingViewException] View file "Home\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Home\\index.ctp',
+)
+Request URL: /project3/home
+Stack Trace:
+#0 C:\xampp\htdocs\project3\lib\Cake\View\View.php(470): View->_getViewFileName('Home\\index')
+#1 C:\xampp\htdocs\project3\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\project3\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\project3\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#4 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-01-31 05:24:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /project3/css/cake.generic.css
+Stack Trace:
+#0 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 06:01:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /project3/css/cake.generic.css
+Stack Trace:
+#0 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 06:01:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /project3/css/cake.generic.css
+Stack Trace:
+#0 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 06:01:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /project3/css/cake.generic.css
+Stack Trace:
+#0 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 06:04:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /project3/css/cake.generic.css
+Stack Trace:
+#0 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-04-21 20:41:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /project3/css/cake.generic.css
+Stack Trace:
+#0 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-04-21 20:41:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /project3/css/cake.generic.css
+Stack Trace:
+#0 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-04-21 20:41:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /project3/css/cake.generic.css
+Stack Trace:
+#0 C:\xampp\htdocs\project3\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

@@ -1,0 +1,7 @@
+﻿$this->set("my_name", "Anhtu");
+// giống với request.setAttribute("my_name", "Anhtu"); trong JSP
+// bên trang đích có thể đọc giá trị này = $my_name
+
+$this->Session->write('loginedUser_name', "nguyenbka");
+// giống với session.setAttribute('loginedUser_name', "nguyenbka"); trong JSP
+// đọc giá trị này: $this->Session->read('loginedUser_name'));
