@@ -115,6 +115,7 @@
 				
 				//insert this post into DB
 				$sql_write_post = "INSERT INTO posts(user_id, content, hashtag) VALUES('".$_SESSION['userId']."', '".$content."', '".$tags."')";
+				echo "sql = ".$sql_write_post;
 				$this->Post->query($sql_write_post);
 				$this->set("postSuccess", "1");
 
